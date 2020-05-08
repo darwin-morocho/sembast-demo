@@ -9,6 +9,7 @@ class DB {
   static DB get instance => _instance;
 
   Database _database;
+  Database get database => _database;
 
   Future<void> init() async {
     final String dbName = "flutter_avanzado.db";
